@@ -50,7 +50,7 @@
         align-items: center;
     }
     .profile img{
-        width: 100px;
+        width: 100%;
         border-radius: 100%;
         border: solid 1px rgb(255, 255, 255);
     }
@@ -157,6 +157,9 @@
         background-color: rgba(255, 255, 255, 0.644);
         scale: 1.02;
     }
+    .element img{
+        width: 50px;
+    }
     .element .element-info{
         text-align: center;
     }
@@ -165,9 +168,6 @@
     .element .element-info .text{
         font-size: small;
         color: rgb(112, 112, 112);
-    }
-    .element img{
-        width: 100px;
     }
     /* element end */
     /* elements end */
