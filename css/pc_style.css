@@ -24,6 +24,7 @@
         background-color: rgba(163, 255, 255, 0.479);
         border-radius: 20px;
         box-shadow: 0px 0px 5px 1px rgb(79, 204, 204);
+        overflow: hidden;
         transition: .3s;
         display: flex;
     }
@@ -31,6 +32,25 @@
         scale: 1.02;
         box-shadow: 2px 2px 10px 1px rgb(79, 204, 204);
     }
+    /* main-section before/after start */
+    .main-section::after{z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 00%;
+        transform: translateX(-100%);
+        border-radius: 20px;
+        background-color: rgba(238, 254, 255, 0.493);
+        transition: .9s;
+    }
+    .main-section:hover::after{
+        width: 80%;
+        height: 100%;
+        transform: translateX(150%);
+    }
+
+    /* main-section before/after end */
     /* dashboard start */
     .dashboard{width: 30vw;
         
